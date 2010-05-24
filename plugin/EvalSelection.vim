@@ -2,8 +2,8 @@
 " @Author:      Tom Link (micathom AT gmail com)
 " @License:     GPL (see http://www.gnu.org/licenses/gpl.txt)
 " @Created:     29-Jän-2004.
-" @Last Change: 2010-01-07.
-" @Revision:    886
+" @Last Change: 2010-05-09.
+" @Revision:    889
 " 
 " vimscript #889
 " 
@@ -13,10 +13,10 @@
 
 """ Basic Functionality {{{1
 
-if &cp || exists("s:loaded_evalselection") "{{{2
+if &cp || exists("loaded_EvalSelection") "{{{2
     finish
 endif
-let s:loaded_evalselection = 17
+let loaded_EvalSelection = 17
 
 " Parameters {{{2
 if !exists("g:evalSelectionLeader")         | let g:evalSelectionLeader         = '<Leader>e' | endif "{{{2
