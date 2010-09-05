@@ -1,6 +1,6 @@
-EvalSelection (VIM plugin) -- EvalSelection -- evaluate the visual area
+evalselection (VIM plugin) -- Evaluate selected vim/ruby/... code
 
-Status:  Experimental
+Status:  Minor problems
 Install: See http://github.com/tomtom/vimtlib/blob/master/INSTALL.TXT
 See http://github.com/tomtom for related plugins.
 
