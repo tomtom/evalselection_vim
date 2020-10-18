@@ -3,8 +3,8 @@
 " @Website:     http://www.vim.org/account/profile.php?user_id=4037
 " @License:     GPL (see http://www.gnu.org/licenses/gpl.txt)
 " @Created:     2010-01-03.
-" @Last Change: 2020-10-17.
-" @Revision:    6
+" @Last Change: 2020-10-18.
+" @Revision:    7
 
 let s:save_cpo = &cpo
 set cpo&vim
@@ -24,7 +24,7 @@ if !exists("*EvalSelectionCalculate")
 endif
 
 function! EvalSelection_python(cmd) "{{{3
-    call EvalSelection("python", a:cmd, "python3")
+    call evalselection#Eval("python", a:cmd, "python3")
 endf
 
 if !hasmapto("EvalSelection_python(")

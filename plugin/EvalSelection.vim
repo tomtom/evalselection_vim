@@ -2,8 +2,8 @@
 " @Author:      Tom Link (micathom AT gmail com)
 " @License:     GPL (see http://www.gnu.org/licenses/gpl.txt)
 " @Created:     29-Jän-2004.
-" @Last Change: 2010-05-09.
-" @Revision:    889
+" @Last Change: 2020-10-18.
+" @Revision:    891
 " 
 " vimscript #889
 " 
@@ -26,6 +26,9 @@ if !exists("g:evelSelectionEvalExpression") | let g:evelSelectionEvalExpression 
 
 if !exists('g:evalSelectionFiletypes')
     let g:evalSelectionFiletypes = ['vim']   "{{{2
+    if has('python3')
+        call add(g:evalSelectionFiletypes, 'python')
+    endif
 endif
 
 if !exists("g:evalSelectionPluginMenu") "{{{2
